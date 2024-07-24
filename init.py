@@ -1,11 +1,13 @@
 import random
-def greetings():
-    print("Hello World")
+import numpy as np
 
-def say(*args, **kwargs):
-    print(*args, **kwargs)
+# Alias for print()
+say = print
 
-ran = random.random
+# Alias for random.random()
+def ran():
+    return random.random()
 
+# Alias for numpy.array()
 def arr(*args, **kwargs):
-    array(*args, **kwargs)
+    return np.array(*args, **kwargs)
